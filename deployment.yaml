@@ -18,6 +18,8 @@ containers:
 image: 120983/kube8s:tagversion
 ports:
 - containerPort: 8080
+
+
 ---
 apiVersion: v1
 kind: Service
