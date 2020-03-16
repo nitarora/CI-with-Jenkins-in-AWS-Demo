@@ -27,7 +27,7 @@ sh 'mvn test'
 stage("Build image") {
 steps {
 script {
-myapp = docker.build("nitinarora12/kube8s:${env.BUILD_ID}")
+myapp = docker.build("120983/kube8s:${env.BUILD_ID}")
 }
 }
 }
