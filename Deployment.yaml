@@ -14,7 +14,7 @@ app: webapp1
 spec:
 containers:
 - name: webapp1
-image: ashishgupta0711/kube8s:tagversion
+image: nitinarora12/kube8s:tagversion
 ports:
 - containerPort: 8080
 ---
