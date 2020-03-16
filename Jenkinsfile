@@ -34,7 +34,7 @@ myapp = docker.build("120983/kube8s:${env.BUILD_ID}")
 stage("Push image") {
 steps {
 script {
-docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
+docker.withRegistry('https://registry.hub.docker.com', 'Docker-hub-credentials') {
 myapp.push("${env.BUILD_ID}")
 }
 }
