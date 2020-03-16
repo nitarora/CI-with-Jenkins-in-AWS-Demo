@@ -1,7 +1,7 @@
 pipeline {
 agent any
 environment {
-PROJECT_ID = 'devops-nitin'
+PROJECT_ID = 'Nitin-Devops'
 CLUSTER_NAME = 'kube-cluster-nit'
 LOCATION = 'europe-north1-a'
 CREDENTIALS_ID = 'kubernetes'
