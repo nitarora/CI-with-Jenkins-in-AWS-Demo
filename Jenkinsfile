@@ -1,9 +1,9 @@
 pipeline {
 agent any
 environment {
-PROJECT_ID = 'devops-ashish'
-CLUSTER_NAME = 'kube-cluster-superleague'
-LOCATION = 'europe-west1-b'
+PROJECT_ID = 'devops-nitin'
+CLUSTER_NAME = 'kube-cluster-nit'
+LOCATION = 'europe-north1-a'
 CREDENTIALS_ID = 'kubernetes'
 }
 stages {
@@ -27,7 +27,7 @@ sh 'mvn test'
 stage("Build image") {
 steps {
 script {
-myapp = docker.build("ashishgupta0711/kube8s:${env.BUILD_ID}")
+myapp = docker.build("nitinarora12/kube8s:${env.BUILD_ID}")
 }
 }
 }
