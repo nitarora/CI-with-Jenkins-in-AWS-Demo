@@ -3,7 +3,7 @@ agent any
 environment {
 PROJECT_ID = 'Nitin-Devops'
 CLUSTER_NAME = 'kube-cluster-nit'
-LOCATION = 'europe-north1-a'
+LOCATION = 'europe-north1-b'
 CREDENTIALS_ID = 'kubernetes'
 }
 stages {
